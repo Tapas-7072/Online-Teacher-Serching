@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+      max-width: 500px;
+      max-height: 420px;
+      margin: 100px auto;
+      background-color: whitesmoke;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+      
+            }
+            #lg{
+               
+  background-color: #007bff;  
+  color: #fff;
+  padding: 5px 5px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  font-size: 16px; 
+  font-weight: bold; 
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block; 
+  margin: 0;
+  width: 70px;
+}
+#lg:hover {
+  background-color: #0056b3;
+}
+#lg:active {
+  background-color: #003d80;
+
+            }
+      body{
+      font-family: Arial, sans-serif;
+      padding: 0;
+      background-image: url('ltsregd.jpeg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+                       <marquee behavior="alternate" style="color:white;font-size: 35px;">Wellcome to Online Teacher Searching System </marquee>
+
+        <div align="center" class="container">
+                            
+
+            <form method="post" action="login_student.jsp">
+               <h2 style="font-family:arial;white-space: nowrap">Online Teacher Searching System</h2>
+
+                <h2 style="font-family:arial"> Student Login</h2>
+                       
+
+                <table>
+                    <tr>
+                        <td><b>Username:</b></td>
+                        <td><input type="text" name="sln" placeholder="Enter username here"  required style="background-color:papayawhip;font-weight: bold;border-radius: 5px;"></td>
+                    </tr>
+                    <tr><td></td></tr>
+         
+
+                                  
+
+                     <tr>
+                         <td><b>Password:</b><br></td><br>
+                        <td><input type="password" name="slp" placeholder="Enter password here" required style="background-color:papayawhip;font-weight: bold;border-radius: 5px;"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Login" id="lg"></td>
+                        <td><a href="changepassword_student.html" style="white-space: nowrap;text-decoration:none;" >Change password?</a></td>
+
+
+                    </tr>
+                 
+
+                </table>
+             <p style="white-space: nowrap;">Don't have an account? <a href="student_regd.html" style="text-decoration:none;">Click here for registration</a></p>
+
+           <a href="index.html" style="text-decoration: none;float: left;"><b><-BACK</b></a>
+
+
+            </form>
+        </div>
+    </body>
+</html>

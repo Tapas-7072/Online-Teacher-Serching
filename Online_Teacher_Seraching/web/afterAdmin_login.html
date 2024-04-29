@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+               .buse{
+                float: right;
+                margin-right: 50px;
+                margin-top: 0px;
+                
+            }
+            .bl{
+                border: none;
+                border-radius: 5px;
+                width: 80px;
+                height: 40px;
+                font-family: arial;                
+
+            }
+              .ainb{
+                text-decoration: none;
+                color: #fff;
+                font-weight: bolder;
+                white-space: nowrap;
+            }
+                   body{
+      font-family: Arial, sans-serif;
+      padding: 0;
+      background-image: url('https://th.bing.com/th/id/OIP.7ea2n7sfDe2aR7BVWIYjMQHaEr?w=271&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+            }
+            .v{
+                background-color: #ffff66;font-weight: bold;border: none;width: 120px;height:30px;border-radius: 5px;
+            }
+        </style>
+        <script>
+            function openlog(){
+                alert("Are You Sure Exit the page");
+            }
+        </script>
+    </head>
+    <body>
+    <marquee behavior="alternate" style="color:#33ff00;font-size: 35px;">Wellcome to Online Teacher Searching System </marquee>
+
+            <h1 align="center">Admin Page</h1>
+        <div>
+            
+                  
+            <div class="buse">
+                <button style="background-color:#ff66ff;width: 130px" class="bl"><a href="search_teacher.html" class="ainb" >&#128269; Search Teacher</a></button>
+
+          <button style="background-color:#66ff66;" class="bl"><a href="selectop_admin.html" class="ainb" >Profile</a></button>
+
+           <button style="background-color:blue;width: 140px" class="bl"><a href="changepassword_admin.html" class="ainb">Change Password</a></button>
+           <button style="background-color:red;" class="bl" onclick="openlog()"><a href="loginpage_admin.html" class="ainb" >Log Out</a></button>
+            </div>
+                    <div class="vts">
+                        <form method="post" action="viewteacher.jsp">
+                            <input type="submit" value="View all Teachers" class="v">
+                        </form><br><br>
+                        <form method="post" action="viewstudent.jsp">   
+                            <input type="submit" value="View all Students" class="v" style="background-color:#6666ff">
+    
+</form>
+            </div>
+                
+
+               
+           
+        </div>
+    </body>
+</html>

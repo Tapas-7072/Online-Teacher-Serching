@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .tech{
+      width: 500px;
+      height: 400px;
+      margin: 50px auto;
+      background-color: powderblue;
+      padding: 20px;
+      border-radius: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            #srg{
+  background-color: green;  
+  color: #fff;
+  padding: 5px 5px; 
+  border: none; 
+  border-radius: 4px; 
+  font-size: 13px; 
+  font-weight: bold; 
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block; 
+  margin: 0;
+  width: 70px;
+            }
+            .ins{
+                border-radius: 5px;
+                background-color:#fafab5;
+                font-weight: bold;
+            }
+                 
+                 body{
+      font-family: Arial, sans-serif;
+      padding: 0;
+      background-image: url('sregd.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+            }
+        </style>
+ 
+    </head>
+    <body>
+            <marquee behavior="alternate" style="color:yellow;font-size: 35px;">Wellcome to Online Teacher Searching System </marquee>
+
+        <div class="tech">
+            <h1 align="center">New Student Registration</h1>
+            <form method="post" action="student_regd.jsp">
+                <table style="font-weight:bold;font-family: arial">
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" class="ins" name="sname" maxlength="30" pattern="[A-Za-z\s]+" title="Please Enter a valid name with character only" required></td>
+                    </tr>
+                 
+                     <tr>
+                        <td>Phone Number:</td>
+                        <td><input type="text" class="ins" name="sphn" maxlength="10" pattern="[0-9]{10}" title="Please Enter a valid Phone number." required></td>
+                    </tr>
+                      <tr>
+                        <td>Email:</td>
+                        <td><input type="text" class="ins" name="semail" pattern="^[a-z][a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter valid mail address with first letter in lowercase, and .com and @ symbol" required></td>
+                    </tr>
+                        <tr>
+                        <td>Username:</td>
+                        <td><input type="text" class="ins" name="suname" maxlength="20"  required></td>
+                    </tr>
+                     <tr>
+                        <td>Password:</td>
+                        <td> <input type="password" class="ins"  name="sp" pattern=".{8,}" title="password must be at least 8 character long" required> </td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td><input type="radio" name="g" style="accent-color:blue;" value="male" required> Male<input type="radio" name="g" style="accent-color:blue;" value="female" required> Female <input type="radio" name="g" style="accent-color:blue;" value="others" required>Others</td>
+                        
+
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td>  <input type="text" class="ins" name="age" pattern="^(?!0$)([1-9][0-9]?|1[01][0-9]|120)$" title="Please enter a valid age between 1 and 120"></td>
+
+                        
+                    </tr>
+                         <tr>
+                        <td>School/college Name:</td>
+                        <td><input type="text" name="schoolname" class="ins" pattern="[A-Za-z\s]+" title="Please Enter a School name with character only" required></td>
+
+                        
+                       </tr>
+                       <tr>
+                           <td>Qualification:</td>
+                           <td><select name="qualification" class="ins" required>
+                                   <option value="" disabled selected>Select your Qualification</option>
+                                   <option value="10th">10th</option>
+                           <option value="+2">+2</option>
+                           <option value="+3">+3</option>
+                           <option value="PG">PG</option>
+                               </select></td>
+
+                       </tr>
+       
+                        <tr>
+                        <td>Place:</td>
+                        <td><select name="place" class="ins" required>
+                                <option value="" disabled selected>Select your Place</option>
+                                <option value="Bhubaneswar">Bhubaneswar</option>
+                                <option value="Khandagiri">Khandagiri</option>
+                                <option value="Gohiria">Gohiria</option>
+                                <option value="Tammando">Tammando</option>
+                                <option value="Patrapada">Patrapada</option>
+                                <option value="Gangapada">Gangapada</option>
+                                <option value="Sahidnagar">Sahidnagar</option>
+                                <option value="Rupali">Rupali</option>
+                                <option value="Crpf">Crpf</option>
+                                <option value="Nayapali">Nayapali</option>
+                                <option value="Rasulgarh">Rasulgarh</option>
+                                <option value="Rajmahal">Rajmahal</option>
+                                 <option value="Palasuni">Palasuni</option>
+                                <option value="Alu Godam">Alu Godam</option>
+                                <option value="Baramunda ISBT">Baramunda ISBT</option>
+                                <option value="Ram Mandir">Ram Mandir</option>
+                                <option value="Khordha New Bus Stand">Khordha New Bus Stand</option>
+                                <option value="Kaling Vihar">Kaling Vihar</option>
+                                <option value="Jayadev Bihar">Jayadev Bihar</option>
+                                <option value="Acharya Bihar">Acharya Bihar</option>
+                                <option value="Kolathia">Kolathia</option>
+
+
+                            </select></td>
+                    </tr>
+                                <tr>
+                        <td>Choose Your Course:</td>
+                               <td><select name="course" class="ins" required>
+                                <option value="" disabled selected>Choose Your Subject</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="English">English</option>
+                                <option value="Science">Science</option>
+                                <option value="History">History</option>
+                                <option value="Geography">Geography</option>
+                                <option value="Sanskrit">Sanskrit</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Apptitude">Apptitude</option>
+                                <option value="GeneralKnowledge">GeneralKnowledge</option>
+                                <option value="Reasoning">Reasoning</option>
+                                <option value="C/C++">C/C++</option>
+                                <option value="Java/Advanced Java">Java/Advanced Java</option>
+                                <option value="Python">Python</option>
+                                <option value="HTML/CSS/JavaScript">HTML/CSS/JavaScript</option>
+                                <option value="Android Devlopment">Android Devlopment</option>
+                                <option value="PHP">PHP</option>
+
+
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Register" id="srg"></td>
+                    </tr>
+                </table>
+                                <a href="loginpage_student.html" style="text-decoration: none"><b><-BACK</b></a>
+
+            </form>
+            
+        </div>
+    </body>
+</html>

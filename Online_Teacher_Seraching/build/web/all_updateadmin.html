@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .aau{
+                   width: 500px;
+      height: 310px;
+      margin: 70px auto;
+      background-color:#ccccff;
+      padding: 20px;
+      
+      border-radius: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            .ru{
+                accent-color:red;
+            }
+            .id{
+                background-color: palegoldenrod;
+                border-radius: 4px;
+                font-weight: bold;
+                
+            }
+        </style>
+    </head>
+    <body style="background-color: #66ccff">
+              <marquee behavior="alternate" style="color:#3333ff;font-size: 35px;">Wellcome to Online Teacher Searching System </marquee>
+
+        <h1 align="center">ADMIN PAGE</h1>
+        <div class="aau">
+            <form method="post" action="all_updateadmin.jsp">
+                <table style="font-weight:bold;">
+                    <tr>
+                        <td>Enter Your Current Phone Number:</td>
+                        <td><input type="text" name="cphone" class="id" maxlength="10" required></td>
+                    </tr>
+                    <tr><td>Please Select Which Field You Want To Update:</td></tr>
+                    <tr>
+                        <td> <input type="radio" name="r1" value="name" class="ru">Name:<br><input type="text" name="nname" class="id"></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="r1" value="phone" class="ru">PhoneNumber:<br><input type="text" name="nphone" class="id" maxlength="10"></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="r1" value="email" class="ru">Email:<br><input type="text" name="nemail" class="id"></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="r1" value="age" class="ru">Age:<br><input type="text" name="nage" class="id"></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="r1" value="uname" class="ru">UserName:<br><input type="text" name="nuname" class="id"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="UPDATE" style="background-color:#0000cc;font-weight: bold;border:none;width: 80px;height: 30px;border-radius: 5px;color:whitesmoke"></td>
+                    </tr>
+                </table>
+                
+                
+            </form>
+        </div>
+    </body>
+</html>

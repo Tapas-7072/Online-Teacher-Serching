@@ -1,0 +1,12 @@
+SMAP
+delete_005fteacher_jsp.java
+JSP
+*S JSP
+*F
++ 0 delete_teacher.jsp
+delete_teacher.jsp
+*L
+5,13:45
+18,34:59
+51,4:93
+*E

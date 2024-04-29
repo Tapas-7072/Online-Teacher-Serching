@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .par{
+      width: 400px;
+      height: 200px;
+      margin: 80px auto;
+      background-color: gray;
+      padding: 20px;
+      border-radius: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body style="background-color:#cccccc">
+    <marquee behavior="alternate" style="color:#3333ff;font-size: 50px;">Wellcome to Online Teacher Searching System </marquee>
+
+        <div class="par">
+            <h1 style="white-space:nowrap">Admin Pre-Registration Page</h1>
+            <form method="post" action="preadmin_regd.jsp">
+                <table>
+                    <tr>
+                        <td>Full Name:</td>
+                        <td><input type="text" name="fname" pattern="[A-Za-z\s]+" title="Please Enter a valid name with character only" required></td>
+
+                    </tr>
+                    <tr>
+                        <td>HR-PASSWORD</td>
+                        <td><input type="password" name="hrp" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit" style="background-color:#00ffff"></td>
+                    </tr>
+                </table>
+                                <a href="loginpage_admin.html" style="text-decoration: none"><b><-BACK</b></a>
+
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .ups1{
+      width: 400px;
+      height: 250px;
+      margin: 70px auto;
+      background-color:#ffcccc;
+      padding: 20px;
+      
+      border-radius: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body style="background-color: #ccffcc;">
+        
+             <marquee behavior="alternate" style="color:#3333ff;font-size: 35px;">Wellcome to Online Teacher Searching System </marquee>
+             <h1 align="center">Student Page</h1>
+
+        <div class="ups1">
+            <form action="update_student1.jsp" method="post">
+                <table style="font-weight:bold;">
+                    <tr>
+                        <td>Enter your Current Phone Number:</td>
+                        <td><input type="text" name="cphone" maxlength="10" required></td>
+                    </tr>
+                    <tr>
+                        <td>Select Which Field You want To Update:</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="c1" value="phone" style="accent-color:blue;">Phone Number:<br><input type="text" name="nphone" maxlength="10"></td>
+                        
+                    
+                    </tr>
+                     <tr>
+                        <td><input type="radio" name="c1" value="place" style="accent-color:blue;">Place:<br><select name="nplace">
+                                <option value="" disabled selected>Select your Place</option>
+                                <option value="Bhubaneswar">Bhubaneswar</option>
+                                <option value="Khandagiri">Khandagiri</option>
+                                <option value="Gohiria">Gohiria</option>
+                                <option value="Tammando">Tammando</option>
+                                <option value="Patrapada">Patrapada</option>
+                                <option value="Gangapada">Gangapada</option>
+                                <option value="Sahidnagar">Sahidnagar</option>
+                                <option value="Rupali">Rupali</option>
+                                <option value="Crpf">Crpf</option>
+                                <option value="Nayapali">Nayapali</option>
+                                <option value="Rasulgarh">Rasulgarh</option>
+                                <option value="Rajmahal">Rajmahal</option>
+                                <option value="Palasuni">Palasuni</option>
+                                <option value="Alu Godam">Alu Godam</option>
+                                <option value="Baramunda ISBT">Baramunda ISBT</option>
+                                <option value="Ram Mandir">Ram Mandir</option>
+                                <option value="Khordha New Bus Stand">Khordha New Bus Stand</option>
+                                <option value="Kaling Vihar">Kaling Vihar</option>
+                                <option value="Jayadev Bihar">Jayadev Bihar</option>
+                                <option value="Acharya Bihar">Acharya Bihar</option>
+                                <option value="Kolathia">Kolathia</option>
+
+
+
+
+                            </select></td>
+                        
+                    
+                    </tr>
+                     <tr>
+                        <td><input type="radio" name="c1" value="email" style="accent-color:blue;">Email:<br><input type="text" name="nemail"></td>
+                        
+                    
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Update" style="font-weight: bold;background-color: #66ff66"></td>
+                    </tr>
+                </table>
+                
+            </form>
+        </div>
+    </body>
+</html>

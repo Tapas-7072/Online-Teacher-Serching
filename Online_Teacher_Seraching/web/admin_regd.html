@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .tech{
+      width: 450px;
+      height: 300px;
+      margin: 80px auto;
+      background-color: gray;
+      padding: 20px;
+      border-radius: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            #trg{
+  background-color: green;  
+  color: #fff;
+  padding: 5px 5px; 
+  border: none; 
+  border-radius: 4px; 
+  font-size: 13px; 
+  font-weight: bold; 
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block; 
+  margin: 0;
+  width: 70px;
+            }
+            .in{
+                border-radius: 5px;
+                background-color:#fafab5;
+                font-weight: bold;
+            }
+                       body{
+      font-family: Arial, sans-serif;
+      padding: 0;
+      background-image: url('rah.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+     <marquee behavior="alternate" style="color: rgb(191, 211, 42);font-size: 50px;">Wellcome to Online Teacher Searching System </marquee>
+
+        <div class="tech">
+            <h1 align="center">New Admin Registration</h1>
+            <form method="post" action="admin_regd.jsp">
+                <table style="font-weight: bold;font-family: arial">
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="aname" class="in" maxlength="30" pattern="[A-Za-z\s]+" title="Please Enter a valid name with character only" required></td>
+                    </tr>
+                 
+                     <tr>
+                        <td>Phone Number:</td>
+                        <td><input type="text" name="aphn" class="in" maxlength="10"  pattern="[0-9]{10}" title="Please Enter a valid Phone number" required></td>
+                    </tr>
+                      <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="aemail" class="in"  pattern="^[a-z][a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter valid mail address with first letter in lowercase, and .com and @ symbol" required></td>
+                      </tr>
+                     
+                     <tr>
+                        <td>Gender:</td>
+        <td><input type="radio" name="g" value="male" style="accent-color:blue;" required> Male<input type="radio" name="g" value="female" style="accent-color:blue;" required> Female <input type="radio" name="g" value="others" style="accent-color:blue;" required>Others</td>
+                        
+
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td>  <input type="text" class="in" name="age" pattern="^(?!0$)([1-9][0-9]?|1[01][0-9]|120)$" title="Please enter a valid age between 1 and 120"></td>
+
+                        
+                    </tr>
+                    
+                        <tr>
+                        <td>Username:</td>
+                        <td><input type="text" name="auname" class="in" maxlength="15" required></td>
+                    </tr>
+                      <tr>
+                        <td> Password:</td>
+                        <td><input type="password" name="ap" class="in" pattern=".{8,}" title="password must be at least 8 character long" required></td>
+                    </tr>
+                    <tr>
+                        <td> HR-Password:</td>
+                        <td><input type="password" name="hp" class="in"  required></td>
+                    </tr>
+                
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Register" id="trg"></td>
+                    </tr>
+                </table>
+            </form>
+            
+        </div>
+    </body>
+</html>

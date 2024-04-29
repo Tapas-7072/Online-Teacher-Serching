@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        
+            .bl{
+                border: none;
+                border-radius: 5px;
+                width: 120px;
+                height: 33px;
+                font-family: arial;                
+
+            }
+              .ainb{
+                text-decoration: none;
+                color: #fff;
+                font-weight: bolder;
+                white-space: nowrap;
+            }
+            .stop{
+      max-width: 500px;
+      max-height: 420px;
+      margin: 100px auto;
+      background-color: whitesmoke;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+                  .button-container {
+  position: relative;
+  display: inline-block;
+}
+
+.additional-buttons {
+  position: absolute;
+  display: none;
+  background-color: #f9f9f9;
+  padding: 5px;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.button-container:hover .additional-buttons {
+  display: block;
+}
+
+.main-button {
+  
+  background-color:#66ff33;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.additional-button {
+  
+  display: block;
+  padding: 5px 10px;
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.additional-button:hover {
+    background-color: #99ffff;
+}
+                 body{
+      font-family: Arial, sans-serif;
+      padding: 0;
+      background-image: url('https://t4.ftcdn.net/jpg/06/06/50/73/240_F_606507323_RnNsXlk059ncdRVr6cb4awoTuKxM5fwM.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+              <marquee behavior="alternate" style="color:palevioletred;font-size: 35px;">Wellcome to Online Teacher Searching System </marquee>
+
+              <h1 align="center" style="color:white"> Admin Page</h1>
+        <div class="stop">
+        <h1>Select The Operation</h1>
+          <div class="buse">
+             <div class="button-container">
+        <button class="main-button">Update Data</button>
+        <div class="additional-buttons">
+          <a href="all_updateadmin.html" class="additional-button">Update Self Data</a>
+          <a href="all_updateteacher.html" class="additional-button">Update Teacher Data</a>
+          <a href="all_updatestudent.html" class="additional-button">Update Student Data</a>
+          
+        </div>
+      </div>
+          <button style="background-color:#ff0000;" class="bl"><a href="delete_admin.html" class="ainb" >Delete Account</a></button>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .ts{
+      max-width: 500px;
+      max-height: 420px;
+      margin: 100px auto;
+      background-color:burlywood;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            .in{
+                 border-radius: 5px;
+                background-color:#fafab5;
+                font-weight: bold;
+            }
+                           body{
+      font-family: Arial, sans-serif;
+      padding: 0;
+      background-image: url('afsl.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+            }
+            
+        </style>
+    </head>
+    <body>
+         <marquee behavior="alternate" style="color:red;font-size: 35px;">Wellcome to Online Teacher Searching System </marquee>
+         
+         <h1 align="center">Teacher Search</h1>
+         
+
+        <div class="ts">
+            <form method="post" action="search_teacher.jsp">
+                <table style="font-weight:bold;">
+                    <tr>
+                        <td>Specialization:</td>
+                                    <td><select name="course" class="in" required>
+                                <option value="" disabled selected>Choose Your Subject</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="English">English</option>
+                                <option value="Science">Science</option>
+                                <option value="History">History</option>
+                                <option value="Geography">Geography</option>
+                                <option value="Sanskrit">Sanskrit</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Apptitude">Apptitude</option>
+                                <option value="GeneralKnowledge">GeneralKnowledge</option>
+                                <option value="Reasoning">Reasoning</option>
+                                <option value="C/C++">C/C++</option>
+                                <option value="Java/Advanced Java">Java/Advanced Java</option>
+                                <option value="Python">Python</option>
+                                <option value="HTML/CSS/JavaScript">HTML/CSS/JavaScript</option>
+                                <option value="Android Devlopment">Android Devlopment</option>
+                                <option value="PHP">PHP</option>
+
+
+                            </select></td>
+                   
+                        <td>Place:</td>
+                              <td><select name="place" class="in" required>
+                                <option value="" disabled selected>Select your Place</option>
+                                <option value="Bhubaneswar">Bhubaneswar</option>
+                                <option value="Khandagiri">Khandagiri</option>
+                                <option value="Gohiria">Gohiria</option>
+                                <option value="Tammando">Tammando</option>
+                                <option value="Patrapada">Patrapada</option>
+                                <option value="Gangapada">Gangapada</option>
+                                <option value="Sahidnagar">Sahidnagar</option>
+                                <option value="Rupali">Rupali</option>
+                                <option value="Crpf">Crpf</option>
+                                <option value="Nayapali">Nayapali</option>
+                                <option value="Rasulgarh">Rasulgarh</option>
+                                <option value="Rajmahal">Rajmahal</option>
+                                 <option value="Palasuni">Palasuni</option>
+                                <option value="Alu Godam">Alu Godam</option>
+                                <option value="Baramunda ISBT">Baramunda ISBT</option>
+                                <option value="Ram Mandir">Ram Mandir</option>
+                                <option value="Khordha New Bus Stand">Khordha New Bus Stand</option>
+                                <option value="Kaling Vihar">Kaling Vihar</option>
+                                <option value="Jayadev Bihar">Jayadev Bihar</option>
+                                <option value="Acharya Bihar">Acharya Bihar</option>
+                                <option value="Kolathia">Kolathia</option>
+
+
+                            </select></td>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="&#128269;&nbsp;Search" style="background-color:#007bff;color:white;font-weight: bold;border-radius: 5px;"></td>
+                    </tr>
+                </table>
+            </form>
+            
+        </div>
+    </body>
+</html>

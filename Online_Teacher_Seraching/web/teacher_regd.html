@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .tech{
+      width: 500px;
+      height: 360px;
+      margin: 70px auto;
+      background-color: powderblue;
+      padding: 20px;
+      
+      border-radius: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            #trg{
+  background-color: green;  
+  color: #fff;
+  padding: 5px 5px; 
+  border: none; 
+  border-radius: 4px; 
+  font-size: 13px; 
+  font-weight: bold; 
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block; 
+  margin: 0;
+  width: 70px;
+            }
+            .in{
+                border-radius: 5px;
+                background-color:#fafab5;
+                font-weight: bold;
+            }
+                       body{
+      font-family: Arial, sans-serif;
+      padding: 0;
+      background-image: url('tregd.jpeg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+       <marquee behavior="alternate" style="color:#3333ff;font-size: 35px;">Wellcome to Online Teacher Searching System </marquee>
+
+        <div class="tech">
+            <h1 align="center">New Teacher Registration</h1>
+            <form method="post" action="teacher_regd.jsp">
+                <table style="font-weight: bold;font-family: arial">
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="tname" class="in" maxlength="30" pattern="[A-Za-z\s]+" title="Please Enter a valid name with character only" required></td>
+                    </tr>
+                 
+                     <tr>
+                        <td>Phone Number:</td>
+                        <td><input type="text" name="tphn" class="in" maxlength="10" pattern="[0-9]{10}" title="Please Enter a valid Phone number." required></td>
+                    </tr>
+                      <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="temail" class="in"  pattern="^[a-z][a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter valid mail address with first letter in lowercase, and .com and @ symbol" required></td>
+                    </tr>
+                        <tr>
+                        <td>Username:</td>
+                        <td><input type="text" name="tuname" class="in" maxlength="15" required></td>
+                    </tr>
+                     <tr>
+                        <td>Password:</td>
+                        <td><input type="password" name="tp" class="in" pattern=".{8,}" title="password must be at least 8 character long" required></td>
+                    </tr>
+                     <tr>
+                        <td>Gender:</td>
+       <td><input type="radio" name="g" value="male" style="accent-color:blue;" required> Male<input type="radio" name="g" value="female" style="accent-color:blue;" required> Female <input type="radio" name="g" value="others" style="accent-color:blue;" required>Others</td>
+                        
+
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td>  <input type="text" class="in" name="age" pattern="^(?!0$)([1-9][0-9]?|1[01][0-9]|120)$" title="Please enter a valid age (1-120)"></td>
+
+                        
+                    </tr>
+                    <tr>
+                        <td>Specialization:</td>
+                        <td><select name="course" class="in" required>
+                                <option value="" disabled selected>Choose Your Subject</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="English">English</option>
+                                <option value="Science">Science</option>
+                                <option value="History">History</option>
+                                <option value="Geography">Geography</option>
+                                <option value="Sanskrit">Sanskrit</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Apptitude">Apptitude</option>
+                                <option value="GeneralKnowledge">GeneralKnowledge</option>
+                                <option value="Reasoning">Reasoning</option>
+                                <option value="C/C++">C/C++</option>
+                                <option value="Java/Advanced Java">Java/Advanced Java</option>
+                                <option value="Python">Python</option>
+                                <option value="HTML/CSS/JavaScript">HTML/CSS/JavaScript</option>
+                                <option value="Android Devlopment">Android Devlopment</option>
+                                <option value="PHP">PHP</option>
+
+
+
+                            </select></td>
+                    </tr>
+                        <tr>
+                        <td>Place:</td>
+                        <td><select name="place" class="in" required>
+                                <option value="" disabled selected>Select your Place</option>
+                                <option value="Bhubaneswar">Bhubaneswar</option>
+                                <option value="Khandagiri">Khandagiri</option>
+                                <option value="Gohiria">Gohiria</option>
+                                <option value="Tammando">Tammando</option>
+                                <option value="Patrapada">Patrapada</option>
+                                <option value="Gangapada">Gangapada</option>
+                                <option value="Sahidnagar">Sahidnagar</option>
+                                <option value="Rupali">Rupali</option>
+                                <option value="Crpf">Crpf</option>
+                                <option value="Nayapali">Nayapali</option>
+                                <option value="Rasulgarh">Rasulgarh</option>
+                                <option value="Rajmahal">Rajmahal</option>
+                                <option value="Palasuni">Palasuni</option>
+                                <option value="Alu Godam">Alu Godam</option>
+                                <option value="Baramunda ISBT">Baramunda ISBT</option>
+                                <option value="Ram Mandir">Ram Mandir</option>
+                                <option value="Khordha New Bus Stand">Khordha New Bus Stand</option>
+                                <option value="Kaling Vihar">Kaling Vihar</option>
+                                <option value="Jayadev Bihar">Jayadev Bihar</option>
+                                <option value="Acharya Bihar">Acharya Bihar</option>
+                                <option value="Kolathia">Kolathia</option>
+
+
+
+
+                            </select></td>
+                    </tr>
+                      <tr>
+                        <td>Experience(Years):</td>
+                        <td><input type="text" name="ex" class="in" pattern="[0-9]+" title="Please Enter a valid Experience, character not allowed" required></td>
+
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Register" id="trg"></td>
+                    </tr>
+                </table>
+              <a href="loginpage_teacher.html" style="text-decoration: none"><b><-BACK</b></a>
+
+            </form>
+            
+        </div>
+    </body>
+</html>
